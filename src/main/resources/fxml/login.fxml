@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="750.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="com.artisanweb.fast.food.system.LoginController">
+   <children>
+      <Pane prefHeight="140.0" prefWidth="750.0" style="-fx-background-color: B0B0B0;" />
+      <Pane layoutX="251.0" layoutY="206.0" prefHeight="115.0" prefWidth="249.0" style="-fx-background-color: B0B0B0;">
+         <children>
+            <TextField focusTraversable="false" layoutX="48.0" layoutY="26.0" promptText="usuario" />
+            <PasswordField focusTraversable="false" layoutX="48.0" layoutY="62.0" promptText="contraseña" />
+         </children>
+      </Pane>
+      <Button focusTraversable="false" layoutX="349.0" layoutY="338.0" mnemonicParsing="false" style="-fx-background-color: B0B0B0;" text="INGRESAR" />
+   </children>
+</AnchorPane>

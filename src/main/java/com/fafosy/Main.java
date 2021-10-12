@@ -1,12 +1,10 @@
-package com.artisanweb.fast_food_system;
+package com.fafosy;
 
 import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 
@@ -17,7 +15,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        String pathFile = "/fxml/login.fxml";
+        String pathFile = "/view/fxml/login.fxml";
             Parent root = FXMLLoader.load(getClass().getResource(pathFile));
                 Scene scene = new Scene(root);
                     stage.setScene(scene);

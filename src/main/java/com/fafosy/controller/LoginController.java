@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.artisanweb.fast_food_system;
+package com.fafosy.controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;

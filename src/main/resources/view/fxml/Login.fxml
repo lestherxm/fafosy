@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 
 
-<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="750.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="com.artisanweb.fast_food_system.LoginController">
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="750.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="com.fafosy.controller.LoginController">
    <children>
       <Pane prefHeight="140.0" prefWidth="750.0" style="-fx-background-color: B0B0B0;" />
       <Pane layoutX="251.0" layoutY="206.0" prefHeight="115.0" prefWidth="249.0" style="-fx-background-color: B0B0B0;">

@@ -4,6 +4,7 @@ module com.artisanweb.system{
     requires javafx.controls; // para usar los controles de javafx
     requires javafx.fxml; // para trabajar con archivos fxml
     requires java.base; // para usar JAVA LANGUAGE como tal en el proyecto
-    exports com.artisanweb.fast_food_system; //para hacer uso de todas las clases ubicadas en este paquete.
+    opens com.fafosy.controller;
+    exports com.fafosy; //para hacer uso de todas las clases ubicadas en este paquete.
                                              //lo cual en sí es todo el proyecto como tal   
 }

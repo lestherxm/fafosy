@@ -1,4 +1,4 @@
-package com.artisanweb.fast.food.system;
+package com.artisanweb.fast_food_system;
 
 import java.io.IOException;
 import javafx.application.Application;
@@ -11,9 +11,9 @@ import javafx.stage.Stage;
 
 
 /**
- * JavaFX App
+ * JavaFX Main
  */
-public class App extends Application {
+public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {

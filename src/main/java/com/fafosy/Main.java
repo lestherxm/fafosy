@@ -15,7 +15,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        String pathFile = "/view/fxml/login.fxml";
+        String pathFile = "/View/Fxml/login.fxml";
             Parent root = FXMLLoader.load(getClass().getResource(pathFile));
                 Scene scene = new Scene(root);
                     stage.setScene(scene);

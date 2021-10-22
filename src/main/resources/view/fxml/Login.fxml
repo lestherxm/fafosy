@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="750.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="com.fafosy.controller.LoginController">
-   <children>
-      <Pane prefHeight="140.0" prefWidth="750.0" style="-fx-background-color: B0B0B0;" />
-      <Pane layoutX="251.0" layoutY="206.0" prefHeight="115.0" prefWidth="249.0" style="-fx-background-color: B0B0B0;">
+<AnchorPane prefHeight="500.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fafosy.controller.LoginController">
+    <stylesheets>
+        <URL value="@../Css/Login.css"/>
+    </stylesheets>
+    <children>
+      <Pane id="ImgRestaurant" prefHeight="195.0" prefWidth="840.0" />
+      <Pane fx:id="ContenedorDatosLogin" layoutX="245.0" layoutY="250.0" prefHeight="195.0" prefWidth="372.0">
          <children>
-            <TextField focusTraversable="false" layoutX="48.0" layoutY="26.0" promptText="usuario" />
-            <PasswordField focusTraversable="false" layoutX="48.0" layoutY="62.0" promptText="contraseña" />
+            <TextField fx:id="TxtEmail" focusTraversable="false" layoutX="48.0" layoutY="34.0" prefHeight="34.0" prefWidth="290.0" promptText="INGRESE SU CORREO ELECTRÓNICO" />
+            <PasswordField fx:id="TxtPass" focusTraversable="false" layoutX="48.0" layoutY="81.0" prefHeight="34.0" prefWidth="290.0" promptText="INGRESE SU CONTRASEÑA" />
+            <Button id="BtnLogin" fx:id="BtnLogin" focusTraversable="false" layoutX="136.0" layoutY="129.0" mnemonicParsing="false" onAction="#Login" prefHeight="34.0" prefWidth="100.0" text="ACCEDER" />
          </children>
       </Pane>
-      <Button focusTraversable="false" layoutX="349.0" layoutY="338.0" mnemonicParsing="false" style="-fx-background-color: B0B0B0;" text="INGRESAR" />
    </children>
 </AnchorPane>

@@ -37,7 +37,8 @@ public class ConnectionSQLServer {
         }
     }
             
-    //This method runs on @getConnectionToSQLServer method [Uing SQLServer]
+    //ESTE MÉTODO SE INVOCA EN EL CONSTRUCTOR/ AL MOMENTO DE CREAR UN OBJETO CON ESTA CLASE
+    //OBTIENE LOS DATOS CONTENIDOS EN EL ARCHIVO sqlserver.properties CONTENIDA EN LA CARPETA: resources/Config
     private void getPropertiesSQLServer(){
         try{
             props = new Properties();
@@ -50,7 +51,7 @@ public class ConnectionSQLServer {
         }
     }
     
-    //This method runs on @getConnectionToSQLServer method [Uing SQLServer]
+    //ESTE MÉTODO DEVUELVE UN STRING CON LOS DATOS RECOGIDOS/ALMACENADOS EN EL OBJETO PROPERTIES
     private String LoadPropertiesSQLServer(){
          try {
             String host = props.getProperty("host");
@@ -71,12 +72,12 @@ public class ConnectionSQLServer {
         }
     }
     
-    //This method runs on all the app when the user do changes in the system (CRUD) [Uing SQLServer]
+    //DEVUELVE LA CONEXIÓN ACTUAL 
     public Connection getConnectionToSQLServer(){
         return this.myConnection;
     }
     
-    //This method runs on all the app when the user do changes in the system (CRUD) [Uing SQLServer]
+    //INTENTA CERRAR LA CONEXIÓN.
     public void CloseConnectionSQLServer(){
         try {
             this.myConnection.close();

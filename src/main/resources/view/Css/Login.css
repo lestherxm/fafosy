@@ -1,18 +1,36 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Oct 22, 2021, 6:58:45 AM
-    Author     : 50232
-*/
+
+/*PANEL SUPERIOR QUE CONTIENE LA IMAGEN DEL RESTAURANTE*/
 #ImgRestaurant{
  -fx-background-image: url('../Img/Login/Panel.jpg');
 }
 
+/* ESTE BOTON SE ENCARGA DE EJECUTAR LA LOGICA PARA VALIDAR LOS DATOS DE INICIO DE SESION*/
 #BtnLogin{
     -fx-background-color: #003F83;
     -fx-text-fill: white;
     -fx-font-weight: bold;
 }
+/* DISEÑO DEL BOTÓN CUANDO EL MOUSE PASE POR ENCIMA DE ÉL*/
+#BtnLogin:hover{
+    -fx-background-color: #FDFDFD;
+    -fx-text-fill:#003F83;
+}
+
+/* BOTON QUE CONTIENE EL LOGO DEL RESTAURANTE*/
+#BtnImgLogo{
+    -fx-background-color: #FDFDFD;
+    -fx-background-radius: 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../Img/Login/Logo.png');
+}
+
+/* ANCHOR PANE QUE CONTIENE TODOS LOS ELEMENTOS*/
+#AnchorPane{
+    -fx-background-color: #FDFDFD;
+}
+
+#ContenedorDatos{
+    -fx-background-color: #E2F0FF;
+}
+

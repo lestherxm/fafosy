@@ -1,0 +1,74 @@
+/* PANEL QUE CONTIENE TODOS LOS ELEMENTOS*/
+AnchorPane{
+    -fx-background-color: #FDFDFD;    
+}
+
+/* PANEL QUE CONTIENE FOTOGRAFIA Y FOTO DE USUARIO */
+#PanelDataUser{
+    -fx-background-color: #003F83; 
+}
+
+#NombreUser{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: large;
+}
+
+#RolUser{
+    -fx-text-fill: white;
+    -fx-font-size: large;
+}
+
+#FotoUser{
+    -fx-background-color: #003F83;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url('../Img/Menu/Perfil.png');
+}
+
+/* ESTILO COMÚN DE LOS BOTONES DEL MENÚ PRINCIPAL*/
+.BtnOptionMenu{
+    -fx-background-color: #FDFDFD;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.BtnOptionMenu:hover{
+    opacity: 0.85;
+    /* -fx-background-color: #E2F0FF;*/
+}
+
+/* ESTILO COMÚN DE LOS LABELS DE CADA UNA DE LAS OPCIONES DEL MENÚ*/
+.LabelOptions{
+    -fx-text-fill: #003F83;
+    -fx-font-weight: bold;
+    -fx-font-size: large;
+}
+
+/* SETEANDO LAS IMAGENES A CADA UNO DE LOS BOTONES DEL MENÚ */
+#BtnSalir{
+    -fx-background-image: url('../Img/Menu/Salir.png');
+}
+#BtnGestionarUsuarios{
+    -fx-background-image: url('../Img/Menu/GestionarUsuarios.png');
+}
+#BtnMiCuenta{
+    -fx-background-image: url('../Img/Menu/MiCuenta.png');
+}
+#BtnEstadisticas{
+    -fx-background-image: url('../Img/Menu/Estadisticas.png');
+}
+#BtnEditarMenu{
+    -fx-background-image: url('../Img/Menu/EditarMenu.png');
+}
+#BtnPedidosXEntregar{
+    -fx-background-image: url('../Img/Menu/PedidosXEntregar.png');
+}
+#BtnPedidosXAtender{
+    -fx-background-image: url('../Img/Menu/PedidosXAtender.png');
+}
+#BtnTomarOrden{
+    -fx-background-image: url('../Img/Menu/TomarOrden.png');
+}
+
+

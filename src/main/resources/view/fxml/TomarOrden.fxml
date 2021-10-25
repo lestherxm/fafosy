@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="850.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="com.fafosy.controller.TomarOrdenController">
+    <stylesheets>
+        <URL value="@/View/Css/TomarOrden.css" />
+    </stylesheets>
+</AnchorPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="850.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fafosy.controller.UltimasOrdenesEntregadasController">
+    <stylesheets>
+        <URL value="@/View/Style/UltimasOrdenesEntregadas.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane id="PanelDataUser" prefHeight="120.0" prefWidth="850.0">
+         <children>
+            <Label layoutX="141.0" layoutY="38.0" styleClass="ImportanciaLevelOne" text="[NOMBRE DE USUARIO]" />
+            <Label id="ImportanciaLevelTwo" layoutX="141.0" layoutY="60.0" text="[ROL]" />
+            <Button id="FotoUser" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" styleClass="ButtonsIconosPanel" />
+            <Button id="ImgModuloActual" layoutX="736.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" styleClass="ButtonsIconosPanel" />
+            <Label layoutX="505.0" layoutY="49.0" styleClass="ImportanciaLevelOne" text="ÚLTIMAS ORDENES ENTREGADAS" />
+         </children>
+      </AnchorPane>
+      <TableView layoutX="210.0" layoutY="167.0" prefHeight="302.0" prefWidth="450.0">
+         <columns>
+            <TableColumn maxWidth="100.0" minWidth="100.0" prefWidth="100.0" resizable="false" text="ORDEN" />
+            <TableColumn minWidth="0.0" prefWidth="0.0" text="C2" />
+            <TableColumn maxWidth="250.0" minWidth="250.0" prefWidth="250.0" resizable="false" text="PLATILLO" />
+            <TableColumn maxWidth="100.0" minWidth="100.0" prefWidth="100.0" resizable="false" text="CANTIDAD" />
+         </columns>
+      </TableView>
+      <Button layoutX="360.0" layoutY="487.0" maxHeight="40.0" maxWidth="150.0" minHeight="40.0" minWidth="150.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" styleClass="BtnAction" text="REGRESAR" />
+   </children>
+</AnchorPane>

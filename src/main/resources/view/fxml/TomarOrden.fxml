@@ -1,10 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="850.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="com.fafosy.controller.TomarOrdenController">
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fafosy.controller.TomarOrdenController">
     <stylesheets>
-        <URL value="@/View/Css/TomarOrden.css" />
+        <URL value="@/View/Style/TomarOrden.css" />
     </stylesheets>
+   <children>
+      <AnchorPane id="PanelDataUser" prefHeight="120.0" prefWidth="850.0">
+         <children>
+            <Button id="FotoUser" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" styleClass="ButtonsIconosPanel" />
+            <Button id="ImgModuloActual" layoutX="736.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" styleClass="ButtonsIconosPanel" />
+            <Label id="ImportanciaLevelOne" layoutX="611.0" layoutY="38.0" styleClass="ImportanciaLevelOne" text="TOMAR ORDEN" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="141.0" layoutY="38.0" styleClass="ImportanciaLevelOne" text="[NOMBRE DE USUARIO]" />
+      <Label id="ImportanciaLevelTwo" layoutX="141.0" layoutY="60.0" text="[ROL]" />
+      <AnchorPane id="ContenedorCategorias" layoutY="120.0" prefHeight="430.0" prefWidth="200.0">
+         <children>
+            <TableView layoutY="29.0" prefHeight="403.0" prefWidth="200.0">
+              <columns>
+                <TableColumn minWidth="150.0" prefWidth="200.0" text="ITEM" />
+              </columns>
+            </TableView>
+            <AnchorPane layoutY="-1.0" prefHeight="30.0" prefWidth="200.0" styleClass="ContenedorTitle">
+               <children>
+                  <Label layoutX="56.0" layoutY="4.0" styleClass="ImportanciaLevelOne" text="CATEGORÍAS" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="200.0" layoutY="120.0" prefHeight="430.0" prefWidth="380.0" styleClass="ContenedorPlatillos">
+         <children>
+            <TableView layoutX="5.0" layoutY="29.0" prefHeight="403.0" prefWidth="370.0">
+              <columns>
+                <TableColumn maxWidth="200.0" minWidth="200.0" prefWidth="200.0" text="NOMBRE" />
+                <TableColumn maxWidth="60.0" minWidth="110.0" prefWidth="60.0" text="FOTO" />
+                  <TableColumn maxWidth="60.0" minWidth="60.0" prefWidth="60.0" text="PRECIO" />
+              </columns>
+            </TableView>
+            <AnchorPane layoutX="5.0" layoutY="-1.0" prefHeight="30.0" prefWidth="370.0" styleClass="ContenedorTitle">
+               <children>
+                  <Label layoutX="148.0" layoutY="5.0" styleClass="ImportanciaLevelOne" text="PLATILLOS" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="ContenedorDatosOrden" layoutX="580.0" layoutY="120.0" prefHeight="430.0" prefWidth="270.0">
+         <children>
+            <TableView layoutY="29.0" prefHeight="330.0" prefWidth="270.0">
+               <columns>
+                  <TableColumn prefWidth="200.0" text="PLATILLO" />
+                  <TableColumn maxWidth="60.0" minWidth="60.0" prefWidth="60.0" text="N" />
+               </columns>
+            </TableView>
+            <AnchorPane layoutY="-1.0" prefHeight="30.0" prefWidth="270.0" styleClass="ContenedorTitle">
+               <children>
+                  <Label layoutX="68.0" layoutY="3.0" styleClass="ImportanciaLevelOne" text="DATOS DE LA ORDEN" />
+               </children>
+            </AnchorPane>
+            <Button layoutX="25.0" layoutY="376.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="BtnAction" text="CANCELAR" />
+            <Button layoutX="147.0" layoutY="376.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="BtnAction" text="COBRAR" />
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>

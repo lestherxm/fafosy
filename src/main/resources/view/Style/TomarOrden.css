@@ -1,0 +1,17 @@
+@import url('Menu.css');
+
+#ImgModuloActual{
+    -fx-background-image: url('../Img/Menu/TomarOrden.png');
+}
+
+.ContenedorTitle{
+    -fx-background-color: #0A2548;
+}
+
+#ContenedorCategorias, #ContenedorDatosOrden{
+    -fx-background-color: #E6E6E6;
+}
+
+#ContenedorPlatillos{
+    -fx-background-color: #F6F6F6;
+}

@@ -7,29 +7,29 @@
 
 <AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fafosy.controller.MenuController">
     <stylesheets>
-        <URL value="@/View/Css/Menu.css" />
+        <URL value="@/View/Style/Menu.css" />
     </stylesheets>
    <children>
       <AnchorPane id="PanelDataUser" prefHeight="120.0" prefWidth="850.0">
          <children>
-            <Label id="NombreUser" layoutX="141.0" layoutY="38.0" text="[NOMBRE DE USUARIO]" />
-            <Label id="RolUser" layoutX="141.0" layoutY="60.0" text="[ROL]" />
-            <Button id="FotoUser" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
+            <Label layoutX="141.0" layoutY="38.0" styleClass="ImportanciaLevelOne" text="[NOMBRE DE USUARIO]" />
+            <Label id="ImportanciaLevelTwo" layoutX="141.0" layoutY="60.0" text="[ROL]" />
+            <Button id="FotoUser" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" styleClass="ButtonsIconosPanel" />
          </children>
       </AnchorPane>
-      <Label layoutX="253.0" layoutY="184.0" styleClass="LabelOptions" text="PEDIDOS POR ATENDER" />
+      <Label layoutX="244.0" layoutY="184.0" styleClass="LabelOptions" text="ORDENES POR ATENDER" />
       <Button id="BtnPedidosXEntregar" layoutX="452.0" layoutY="212.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" styleClass="BtnOptionMenu" />
-      <Label layoutX="458.0" layoutY="184.0" styleClass="LabelOptions" text="PEDIDOS POR ENTREGAR" />
+      <Label layoutX="439.0" layoutY="184.0" styleClass="LabelOptions" text="ORDENES POR ENTREGAR" />
       <Button id="BtnMiCuenta" layoutX="253.0" layoutY="360.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" styleClass="BtnOptionMenu" />
       <Button id="BtnTomarOrden" layoutX="49.0" layoutY="212.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" styleClass="BtnOptionMenu" />
-      <Label layoutX="678.0" layoutY="184.0" styleClass="LabelOptions" text="EDITAR MENÚ" />
+      <Label layoutX="658.0" layoutY="184.0" styleClass="LabelOptions" text="EDITAR MENÚ" />
       <Button id="BtnEditarMenu" layoutX="652.0" layoutY="212.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" styleClass="BtnOptionMenu" />
       <Button id="BtnEstadisticas" layoutX="49.0" layoutY="360.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" styleClass="BtnOptionMenu" />
       <Label layoutX="75.0" layoutY="332.0" styleClass="LabelOptions" text="ESTADÍSTICAS" />
       <Button id="BtnPedidosXAtender" layoutX="253.0" layoutY="212.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" styleClass="BtnOptionMenu" />
       <Label layoutX="288.0" layoutY="332.0" styleClass="LabelOptions" text="MI CUENTA" />
       <Button id="BtnGestionarUsuarios" layoutX="452.0" layoutY="360.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" styleClass="BtnOptionMenu" />
-      <Label layoutX="466.0" layoutY="332.0" styleClass="LabelOptions" text="GESTIONAR USUARIOS" />
+      <Label layoutX="450.0" layoutY="332.0" styleClass="LabelOptions" text="GESTIONAR USUARIOS" />
       <Button id="BtnSalir" layoutX="652.0" layoutY="360.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" styleClass="BtnOptionMenu" />
       <Label layoutX="707.0" layoutY="332.0" styleClass="LabelOptions" text="SALIR" />
       <Label layoutX="71.0" layoutY="184.0" styleClass="LabelOptions" text="TOMAR ORDEN" />

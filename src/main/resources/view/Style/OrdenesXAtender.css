@@ -1,0 +1,5 @@
+@import url('Menu.css');
+
+#ImgModuloActual{
+    -fx-background-image: url('../Img/Menu/PedidosXAtender.png');
+}

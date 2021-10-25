@@ -8,21 +8,24 @@ AnchorPane{
     -fx-background-color: #003F83; 
 }
 
-#NombreUser{
+.ImportanciaLevelOne{
     -fx-text-fill: white;
     -fx-font-weight: bold;
     -fx-font-size: large;
 }
 
-#RolUser{
+#ImportanciaLevelTwo{
     -fx-text-fill: white;
     -fx-font-size: large;
 }
 
-#FotoUser{
+.ButtonsIconosPanel{
     -fx-background-color: #003F83;
     -fx-background-position: center;
     -fx-background-repeat: no-repeat;
+}
+
+#FotoUser{
     -fx-background-image: url('../Img/Menu/Perfil.png');
 }
 
@@ -69,6 +72,18 @@ AnchorPane{
 }
 #BtnTomarOrden{
     -fx-background-image: url('../Img/Menu/TomarOrden.png');
+}
+
+/* CLASE DE LOS BOTONES QUE REALIZAR ALGUNA ACCION EN LAS DIFERENTES VISTAS */
+.BtnAction{
+    -fx-background-color: #003F83;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+/* DISEÑO DEL BOTÓN CUANDO EL MOUSE PASE POR ENCIMA DE ÉL*/
+.BtnAction:hover{
+    -fx-background-color: #FDFDFD;
+    -fx-text-fill:#003F83;
 }
 
 

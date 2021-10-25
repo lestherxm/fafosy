@@ -1,0 +1,29 @@
+@import url('Menu.css');
+@import url('TomarOrden.css');
+
+#ImgModuloActual{
+    -fx-background-image: url('../Img/Menu/EditarMenu.png');
+}
+
+#BtnAgregar{
+    -fx-background-image: url('../Img/Crud/Create.png');
+}
+
+#BtnEditar{
+    -fx-background-image: url('../Img/Crud/Update.png');
+}
+
+#BtnEliminar{
+    -fx-background-image: url('../Img/Crud/Delete.png');
+}
+
+.BtnCrud{
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: #E6E6E6;
+}
+
+.ContenedorPlatillos{
+    -fx-background-color: #E6E6E6;
+}
+

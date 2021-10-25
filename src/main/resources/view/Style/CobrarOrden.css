@@ -1,0 +1,14 @@
+@import url('Menu.css');
+
+#ImgModuloActual{
+    -fx-background-image: url('../Img/Menu/PagoEnEfectivo.png');
+}
+
+.PanelDatosFinalesOrden{
+    -fx-background-color: #E4E4E4;
+}
+.TituloDatosFinalesOrden{
+    -fx-text-fill: #303030;
+    -fx-font-weight: bold;
+    -fx-font-size: medium;
+}

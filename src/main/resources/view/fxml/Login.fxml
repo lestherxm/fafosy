@@ -9,7 +9,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fafosy.controller.LoginController">
     <stylesheets>
-        <URL value="@/View/Css/Login.css" />
+        <URL value="@/View/Style/Login.css" />
     </stylesheets>
     <children>
       <Pane id="ImgRestaurant" prefHeight="195.0" prefWidth="850.0" styleClass="\@View\Css\Login.css">

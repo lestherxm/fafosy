@@ -15,7 +15,7 @@ import javafx.fxml.Initializable;
  *
  * @author 50232
  */
-public class EditarMenuController implements Initializable {
+public class AgregarCategoriaController implements Initializable {
 
     Main main;
     

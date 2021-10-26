@@ -1,3 +1,4 @@
+@IMPORT url('Login.css');
 /* PANEL QUE CONTIENE TODOS LOS ELEMENTOS*/
 AnchorPane{
     -fx-background-color: #FDFDFD;    
@@ -37,8 +38,7 @@ AnchorPane{
 }
 
 .BtnOptionMenu:hover{
-    opacity: 0.85;
-    /* -fx-background-color: #E2F0FF;*/
+    -fx-background-color: #1a78b1;
 }
 
 /* ESTILO COMÚN DE LOS LABELS DE CADA UNA DE LAS OPCIONES DEL MENÚ*/
@@ -65,10 +65,10 @@ AnchorPane{
     -fx-background-image: url('../Img/Menu/EditarMenu.png');
 }
 #BtnPedidosXEntregar{
-    -fx-background-image: url('../Img/Menu/PedidosXEntregar.png');
+    -fx-background-image: url('../Img/Menu/OrdenesXEntregar.png');
 }
 #BtnPedidosXAtender{
-    -fx-background-image: url('../Img/Menu/PedidosXAtender.png');
+    -fx-background-image: url('../Img/Menu/OrdenesXAtender.png');
 }
 #BtnTomarOrden{
     -fx-background-image: url('../Img/Menu/TomarOrden.png');
@@ -82,7 +82,7 @@ AnchorPane{
 }
 /* DISEÑO DEL BOTÓN CUANDO EL MOUSE PASE POR ENCIMA DE ÉL*/
 .BtnAction:hover{
-    -fx-background-color: #FDFDFD;
+    -fx-background-color: white;
     -fx-text-fill:#003F83;
 }
 

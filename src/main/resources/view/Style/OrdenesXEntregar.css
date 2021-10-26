@@ -1,5 +1,5 @@
-@import url('Menu.css');
+@IMPORT url('Menu.css');
 
 #ImgModuloActual{
-    -fx-background-image: url('../Img/Menu/PedidosXEntregar.png');
+    -fx-background-image: url('../Img/Menu/OrdenesXEntregar.png');
 }

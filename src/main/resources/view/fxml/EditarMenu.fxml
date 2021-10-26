@@ -16,11 +16,11 @@
          <children>
             <Button id="FotoUser" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" styleClass="ButtonsIconosPanel" />
             <Button id="ImgModuloActual" layoutX="736.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" styleClass="ButtonsIconosPanel" />
-            <Label id="ImportanciaLevelOne" layoutX="637.0" layoutY="49.0" styleClass="ImportanciaLevelOne" text="EDITAR MENÚ" />
+            <Label id="ImportanciaLevelOne" layoutX="628.0" layoutY="49.0" styleClass="ImportanciaLevelOne" text="EDITAR MENÚ" />
+            <Label layoutX="141.0" layoutY="38.0" styleClass="ImportanciaLevelOne" text="[NOMBRE DE USUARIO]" />
+            <Label id="ImportanciaLevelTwo" layoutX="141.0" layoutY="60.0" text="[ROL]" />
          </children>
       </AnchorPane>
-      <Label layoutX="141.0" layoutY="38.0" styleClass="ImportanciaLevelOne" text="[NOMBRE DE USUARIO]" />
-      <Label id="ImportanciaLevelTwo" layoutX="141.0" layoutY="60.0" text="[ROL]" />
       <AnchorPane id="ContenedorCategorias" layoutY="120.0" prefHeight="430.0" prefWidth="240.0">
          <children>
             <TableView layoutY="29.0" prefHeight="330.0" prefWidth="240.0">
@@ -38,7 +38,7 @@
             <Button id="BtnEliminar" layoutX="167.0" layoutY="365.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="BtnCrud" />
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="240.0" layoutY="120.0" prefHeight="430.0" prefWidth="610.0" styleClass="ContenedorPlatillos">
+      <AnchorPane id="ContenedorPlatillos" layoutX="240.0" layoutY="120.0" prefHeight="430.0" prefWidth="610.0">
          <children>
             <TableView layoutX="5.0" layoutY="29.0" prefHeight="400.0" prefWidth="515.0">
                <columns>

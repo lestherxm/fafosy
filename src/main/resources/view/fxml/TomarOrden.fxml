@@ -16,7 +16,7 @@
          <children>
             <Button id="FotoUser" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" styleClass="ButtonsIconosPanel" />
             <Button id="ImgModuloActual" layoutX="736.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" styleClass="ButtonsIconosPanel" />
-            <Label id="ImportanciaLevelOne" layoutX="611.0" layoutY="38.0" styleClass="ImportanciaLevelOne" text="TOMAR ORDEN" />
+            <Label id="ImportanciaLevelOne" layoutX="629.0" layoutY="49.0" styleClass="ImportanciaLevelOne" text="TOMAR ORDEN" />
          </children>
       </AnchorPane>
       <Label layoutX="141.0" layoutY="38.0" styleClass="ImportanciaLevelOne" text="[NOMBRE DE USUARIO]" />
@@ -64,7 +64,7 @@
                   <Label layoutX="68.0" layoutY="3.0" styleClass="ImportanciaLevelOne" text="DATOS DE LA ORDEN" />
                </children>
             </AnchorPane>
-            <Button layoutX="25.0" layoutY="376.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="BtnAction" text="CANCELAR" />
+            <Button fx:id="BtnRegresarAlMenu" layoutX="25.0" layoutY="376.0" mnemonicParsing="false" onAction="#MetodoRegresarAlMenu" prefHeight="40.0" prefWidth="100.0" styleClass="BtnAction" text="REGRESAR" />
             <Button layoutX="147.0" layoutY="376.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="BtnAction" text="COBRAR" />
          </children>
       </AnchorPane>

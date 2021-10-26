@@ -7,7 +7,7 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fafosy.controller.PedidosXAtenderController">
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fafosy.controller.OrdenesXAtenderController">
     <stylesheets>
         <URL value="@/View/Style/OrdenesXAtender.css" />
     </stylesheets>
@@ -29,7 +29,7 @@
             <TableColumn maxWidth="100.0" minWidth="100.0" prefWidth="100.0" resizable="false" text="CANTIDAD" />
         </columns>
       </TableView>
-      <Button layoutX="139.0" layoutY="479.0" maxHeight="40.0" maxWidth="150.0" minHeight="40.0" minWidth="150.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" styleClass="BtnAction" text="REGRESAR AL MENÚ" />
+      <Button fx:id="BtnRegresarAlMenu" layoutX="139.0" layoutY="479.0" maxHeight="40.0" maxWidth="150.0" minHeight="40.0" minWidth="150.0" mnemonicParsing="false" onAction="#BtnRegresarAlMenu" prefHeight="40.0" prefWidth="150.0" styleClass="BtnAction" text="REGRESAR AL MENÚ" />
       <Button layoutX="306.0" layoutY="479.0" maxHeight="40.0" maxWidth="230.0" minHeight="40.0" minWidth="230.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="230.0" styleClass="BtnAction" text="VER ÚLTIMAS ORDENES ATENDIDAS" />
       <Button layoutX="550.0" layoutY="479.0" maxHeight="40.0" maxWidth="150.0" minHeight="40.0" minWidth="150.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" styleClass="BtnAction" text="ATENDER ORDEN" />
    </children>

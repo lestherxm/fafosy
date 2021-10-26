@@ -5,6 +5,7 @@
  */
 package com.fafosy.controller;
 
+import com.fafosy.Main;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.Initializable;
@@ -14,8 +15,15 @@ import javafx.fxml.Initializable;
  *
  * @author 50232
  */
-public class PedidosXAtenderController implements Initializable {
+public class ActualizarCategoriaController implements Initializable {
 
+    Main main;
+    
+    //Permite usar los métodos contenidos en la clase principal
+    public void setMain(Main main){
+        this.main = main;
+    }
+    
     /**
      * Initializes the controller class.
      */

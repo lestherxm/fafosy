@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="850.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fafosy.controller.AgregarPlatilloController">
+   <stylesheets>
+      <URL value="@/View/Style/AgregarPlatillo.css" />
+   </stylesheets>
+   <children>
+      <AnchorPane id="PanelDataUser" prefHeight="120.0" prefWidth="850.0">
+         <children>
+            <Button id="FotoUser" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" styleClass="ButtonsIconosPanel" />
+            <Button id="ImgModuloActual" layoutX="736.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" styleClass="ButtonsIconosPanel" />
+            <Label id="ImportanciaLevelOne" layoutX="578.0" layoutY="49.0" styleClass="ImportanciaLevelOne" text="ACTUALIZAR PLATILLO" />
+            <Label layoutX="141.0" layoutY="38.0" styleClass="ImportanciaLevelOne" text="[NOMBRE DE USUARIO]" />
+            <Label id="ImportanciaLevelTwo" layoutX="141.0" layoutY="60.0" text="[ROL]" />
+         </children>
+      </AnchorPane>
+      <TextField layoutX="252.0" layoutY="210.0" prefHeight="25.0" prefWidth="193.0" />
+      <Spinner editable="true" layoutX="252.0" layoutY="292.0" opacity="0.9" prefHeight="25.0" prefWidth="193.0" />
+      <Label layoutX="252.0" layoutY="185.0" styleClass="LabelOptions" text="NOMBRE" />
+      <Label layoutX="252.0" layoutY="264.0" styleClass="LabelOptions" text="PRECIO" />
+      <ImageView fitHeight="100.0" fitWidth="120.0" layoutX="536.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/Crud/ImgPlatilloDefault.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="541.0" layoutY="185.0" styleClass="LabelOptions" text="FOTOGRAFÍA" />
+      <Button layoutX="546.0" layoutY="325.0" mnemonicParsing="false" opacity="0.85" prefHeight="40.0" prefWidth="80.0" styleClass="BtnAction" text="BUSCAR" />
+      <Label layoutX="252.0" layoutY="345.0" styleClass="LabelOptions" text="CATEGORÍA" />
+      <ComboBox layoutX="252.0" layoutY="373.0" opacity="0.9" prefHeight="25.0" prefWidth="193.0" promptText="-- SELECCIONE --" />
+      <Button layoutX="371.0" layoutY="479.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="149.0" styleClass="BtnAction" text="ACTUALIZAR PLATILLO" />
+   </children>
+</AnchorPane>

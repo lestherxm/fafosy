@@ -5,6 +5,7 @@
  */
 package com.fafosy.controller;
 
+import com.fafosy.Main;
 import java.net.URL;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -33,6 +34,11 @@ public class LoginController implements Initializable {
     @FXML TextField TxtEmail;
     @FXML PasswordField TxtPass;
     @FXML Button BtnLogin;
+    Main main;
+    
+    public void setMain(Main main){
+        this.main = main;
+    }
     
     @FXML
     public void Login(){
@@ -54,6 +60,7 @@ public class LoginController implements Initializable {
                         String PassGetted = result.getString(2);
                             if(PassGetted.equals(Pass)){
                                 System.out.println("CORREO Y PASS COINCIDEN, ENTRA");
+                                    this.main.IrAlMenuDesdeLogin(); //SE UBICA LA CLASE MAIN Y SE EJECUTA EL METODO PARA CARGAR EL MENU PERTINENTE
                             }else{
                                 MessagesForUser.showAlert("¡ATENCIÓN!","LA CONTRASEÑA QUE HAS INGRESADO ES INCORRECTA.", AlertType.INFORMATION);
                             }     

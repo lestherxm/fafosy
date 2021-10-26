@@ -1,0 +1,9 @@
+@import url('Menu.css');
+
+#ImgModuloActual{
+      -fx-background-image: url('../Img/Crud/Categoria.png');
+}
+
+.ContenedorDatos{
+     -fx-background-color: #E2F0FF;
+}

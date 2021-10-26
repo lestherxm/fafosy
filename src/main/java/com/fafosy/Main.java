@@ -117,8 +117,7 @@ public class Main extends Application {
     // METODO QUE PERMITE REGRESAR AL MENU (FUNCIONAL PARA "UN NIVEL DESPUÉS" DEL MENÚ)
     // LO UTILIZAN LOS ESCENARIOS CREADOS CON @OpcionDeMenuStage
     public void RegresarAlMenu(){
-        cargarMenu();
-            this.OpcionDeMenuStage.close();
+         this.OpcionDeMenuStage.close();
     }
     
     public static void main(String[] args) {

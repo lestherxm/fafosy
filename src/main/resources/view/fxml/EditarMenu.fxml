@@ -7,7 +7,7 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fafosy.controller.TomarOrdenController">
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fafosy.controller.EditarMenuController">
    <stylesheets>
       <URL value="@/View/Style/EditarMenu.css" />
    </stylesheets>
@@ -55,6 +55,7 @@
             <Button id="BtnAgregar" layoutX="528.0" layoutY="215.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="BtnCrud" />
             <Button id="BtnEditar" layoutX="528.0" layoutY="283.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="BtnCrud" />
             <Button id="BtnEliminar" layoutX="528.0" layoutY="356.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="BtnCrud" />
+            <Button fx:id="BtnRegresarAlMenu" layoutX="525.0" layoutY="7.0" mnemonicParsing="false" onAction="#MetodoRegresarAlMenu" prefHeight="40.0" prefWidth="80.0" styleClass="BtnAction" text="REGRESAR" />
          </children>
       </AnchorPane>
    </children>

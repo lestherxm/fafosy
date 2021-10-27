@@ -58,7 +58,8 @@ public class MenuController implements Initializable {
 
     @FXML
     private void MetodoOrdenesXEntregar(ActionEvent event) {
-        this.main.cargarOpcionDelMenu("OrdenesXEntregar.fxml");
+        //this.main.cargarOpcionDelMenu("OrdenesXEntregar.fxml");
+        this.main.cargarOpcionDelMenu("TrabajoEnProceso.fxml");
     }
 
     @FXML
@@ -68,7 +69,8 @@ public class MenuController implements Initializable {
 
     @FXML
     private void MetodoTomarOrden(ActionEvent event) {
-        this.main.cargarOpcionDelMenu("TomarOrden.fxml");
+        //this.main.cargarOpcionDelMenu("TomarOrden.fxml");
+        this.main.cargarOpcionDelMenu("TrabajoEnProceso.fxml");
     }
 
     @FXML
@@ -83,7 +85,8 @@ public class MenuController implements Initializable {
 
     @FXML
     private void MetodoOrdenesXAtender(ActionEvent event) {
-        this.main.cargarOpcionDelMenu("OrdenesXAtender.fxml");
+        this.main.cargarOpcionDelMenu("TrabajoEnProceso.fxml");
+        //this.main.cargarOpcionDelMenu("OrdenesXAtender.fxml");
     }
 
     @FXML

@@ -1,6 +1,8 @@
 package com.fafosy;
 
 import com.fafosy.controller.*; //importacion de todos los controladores del proyecto.
+import com.fafosy.model.Categoria;
+import com.fafosy.model.Platillo;
 import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -21,7 +23,11 @@ public class Main extends Application {
     private Stage LoginStage;
     private Stage MenuStage;
     private Stage OpcionDeMenuStage; //Este escenario es usado por cada una de las opciones del Menu.fxml
-
+    private Stage OpcionEditarMenuStage; //Este escenario es usado por cada una de las opciones de EditarMenu.fxml
+    
+    //controladores de la app 
+    private EditarMenuController EditarMenuCont;
+    
     @Override
     public void start(Stage stage) throws IOException {
             this.LoginStage = stage; //se carga el escenario de la app
@@ -89,8 +95,8 @@ public class Main extends Application {
                                              OrdenesXEntregarCont.setMain(this);
                                          break;
                                          case "EditarMenu.fxml":
-                                             EditarMenuController EditarMenuCont = loader.getController();
-                                             EditarMenuCont.setMain(this);
+                                             this.EditarMenuCont = loader.getController();
+                                             this.EditarMenuCont.setMain(this);
                                          break;
                                          case "TrabajoEnProceso.fxml":
                                              TrabajoEnProcesoController TrabajoEnProcesoCont = loader.getController();
@@ -102,6 +108,46 @@ public class Main extends Application {
         }
     }
    
+    // ESTE METODO CON BASE EN EL NOMBRE DE ARCHIVO QUE RECIBE CARGA EL MISMO Y LO SETEA AL ESCENARIO OpcionDelStageEditarMenu
+    public void CargarOpcionDelStageEditarMenu(String FileName, Categoria categoria, Platillo platillo){
+        try {
+            FXMLLoader loader = new FXMLLoader(Main.class.getResource($Path+FileName));
+                Parent root = loader.load();
+                    Scene scene = new Scene(root);
+                        this.OpcionEditarMenuStage = new Stage();
+                        this.OpcionEditarMenuStage.setScene(scene);
+                        this.OpcionEditarMenuStage.initOwner(this.OpcionDeMenuStage); //Se le indica el escenario de donde "viene"
+                        this.OpcionEditarMenuStage.initModality(Modality.WINDOW_MODAL); //se le indica el comportamiento de la ventana
+                             this.OpcionEditarMenuStage.setResizable(false); // para que el usuario no pueda modificar a pantalla completa ya que no es responsive la App
+                             this.OpcionEditarMenuStage.show(); //se muestra el escenario/vetana como tal
+                                    //Enlazar El controlador con base en el archivo .fxml cargado
+                                     switch(FileName){
+                                         case "AgregarCategoria.fxml":
+                                              AgregarCategoriaController AgregarCategoriaCont = loader.getController();
+                                              AgregarCategoriaCont.setMain(this);
+                                         break;
+                                         case "ActualizarCategoria.fxml":
+                                              ActualizarCategoriaController ActualizarCategoriaCont = loader.getController();
+                                              ActualizarCategoriaCont.setMain(this);
+                                              ActualizarCategoriaCont.cargarDatosAnteriores(categoria);
+                                         break;
+                                         case "AgregarPlatillo.fxml":
+                                              AgregarPlatilloController AgregarPlatilloCont = loader.getController();
+                                              AgregarPlatilloCont.setMain(this);
+                                         break;
+                                         case "ActualizarPlatillo.fxml":
+                                              ActualizarPlatilloController ActualizarPlatilloCont = loader.getController();
+                                              ActualizarPlatilloCont.setMain(this);
+                                              ActualizarPlatilloCont.CargarDatosAnteriores(platillo);
+                                         break;
+                                     }
+        } catch (IOException ex) {
+            System.out.println("ERROR AL CARGAR EL ARCHIVO Y SETEAR CONTROLADOR");
+            System.out.println(ex.getMessage());
+            ex.printStackTrace();
+        }
+    }
+    
     // METODO PARA IR AL MENU UNA VEZ SE HA PASADO EL LOGIN
     public void IrAlMenuDesdeLogin(){
         cargarMenu();
@@ -118,6 +164,37 @@ public class Main extends Application {
     // LO UTILIZAN LOS ESCENARIOS CREADOS CON @OpcionDeMenuStage
     public void RegresarAlMenu(){
          this.OpcionDeMenuStage.close();
+    }
+    
+    //ESTE METODO PERMITE REGRESAR A EditarMenu.fxml (FUNCIONAL PARA UN NIVEL DESPUÉS DE DICHO ARCHIVO)
+    // LO UTILIZAN LOS ESCENARIOS CREADOS CON @OpcionEditarMenuStage
+    public void RegresarAEditarMenu(){
+         this.OpcionEditarMenuStage.close();
+    }
+    
+    // ESTE METODO ES LLAMADO DESDE @AgregarCategoriaController.java
+    // APUNTA AL CONTROLLADOR @EditMenuController PARA QUE HAGA EL @INSERT
+    public void AgregarCategoria(Categoria categoria){
+         this.EditarMenuCont.AgregarCategoria(categoria);
+         this.OpcionEditarMenuStage.close();
+    }
+    
+    // ESTE METODO ES LLAMADO DESDE @ActualizarCategoriaController.java
+    // APUNTA AL CONTROLLADOR @EditMenuController PARA QUE HAGA EL @UPDATE
+    public void ActualizarCategoria(Categoria categoria){
+         this.EditarMenuCont.ActualizarCategoria(categoria);
+         this.OpcionEditarMenuStage.close();
+    }
+    
+    // ESTE METODO PERMITE AGREGAR UN NUEVO PLATILLO, ES LLAMADO DESDE @AgegarPlatilloController
+    // PARA EJECUTAR EL CODIGO DE INSERCION EN EditarMenuController Y DAR UNA SENSACION DE INSERSION
+    // MAS RÁPIDA.
+    public void AgregarPlatillo(Platillo platillo){
+         EditarMenuCont.AgregarPlatillo(platillo);
+    }
+    
+    public void ActualizarPlatillo(Platillo platillo){
+        EditarMenuCont.ActualizarPlatillo(platillo);
     }
     
     public static void main(String[] args) {

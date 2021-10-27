@@ -23,9 +23,9 @@
       </AnchorPane>
       <AnchorPane id="ContenedorCategorias" layoutY="120.0" prefHeight="430.0" prefWidth="240.0">
          <children>
-            <TableView layoutY="29.0" prefHeight="330.0" prefWidth="240.0">
+            <TableView fx:id="TablaCategoria" layoutY="29.0" prefHeight="330.0" prefWidth="240.0">
                <columns>
-                  <TableColumn maxWidth="240.0" minWidth="240.0" prefWidth="240.0" resizable="false" text="ITEM" />
+                  <TableColumn id="#TablaCategoria" fx:id="ItemCategoria" maxWidth="240.0" minWidth="240.0" prefWidth="240.0" resizable="false" styleClass="ColumnaDeTabla" text="ITEM" />
                </columns>
             </TableView>
             <AnchorPane layoutY="-1.0" prefHeight="30.0" prefWidth="240.0" styleClass="ContenedorTitle">
@@ -33,28 +33,28 @@
                   <Label layoutX="56.0" layoutY="4.0" styleClass="ImportanciaLevelOne" text="CATEGORÍAS" />
                </children>
             </AnchorPane>
-            <Button id="BtnAgregar" layoutX="13.0" layoutY="364.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="BtnCrud" />
-            <Button id="BtnEditar" layoutX="89.0" layoutY="364.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="BtnCrud" />
-            <Button id="BtnEliminar" layoutX="167.0" layoutY="365.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="BtnCrud" />
+            <Button id="BtnAgregar" fx:id="BtnAgregarCategoria" layoutX="13.0" layoutY="364.0" mnemonicParsing="false" onAction="#AbrirAgregarCategoria" prefHeight="60.0" prefWidth="60.0" styleClass="BtnCrud" />
+            <Button id="BtnEditar" fx:id="BtnActualizarCategoria" disable="true" layoutX="89.0" layoutY="364.0" mnemonicParsing="false" onAction="#AbrirActualizarCategoria" prefHeight="60.0" prefWidth="60.0" styleClass="BtnCrud" />
+            <Button id="BtnEliminar" fx:id="BtnEliminarCategoria" disable="true" layoutX="167.0" layoutY="365.0" mnemonicParsing="false" onAction="#MetodoEliminarCategoria" prefHeight="60.0" prefWidth="60.0" styleClass="BtnCrud" />
          </children>
       </AnchorPane>
       <AnchorPane id="ContenedorPlatillos" layoutX="240.0" layoutY="120.0" prefHeight="430.0" prefWidth="610.0">
          <children>
-            <TableView layoutX="5.0" layoutY="29.0" prefHeight="400.0" prefWidth="515.0">
+            <TableView id="TablaPlatillosDeXCategoria" fx:id="TablaPlatillos" layoutX="5.0" layoutY="29.0" prefHeight="400.0" prefWidth="515.0">
                <columns>
-                  <TableColumn maxWidth="250.0" minWidth="250.0" prefWidth="250.0" resizable="false" text="NOMBRE" />
-                  <TableColumn maxWidth="150.0" minWidth="150.0" prefWidth="150.0" resizable="false" text="FOTO" />
-                  <TableColumn maxWidth="113.0" minWidth="113.0" prefWidth="113.0" resizable="false" text="PRECIO" />
+                  <TableColumn fx:id="NombrePlatillo" maxWidth="275.0" minWidth="275.0" prefWidth="275.0" resizable="false" styleClass="ColumnaDeTabla" text="NOMBRE" />
+                  <TableColumn fx:id="FotoPlatillo" maxWidth="120.0" minWidth="120.0" prefWidth="120.0" resizable="false" styleClass="ColumnaDeTabla" text="FOTO" />
+                  <TableColumn fx:id="PrecioPlatillo" maxWidth="120.0" minWidth="120.0" prefWidth="120.0" resizable="false" styleClass="ColumnaDeTabla" text="PRECIO" />
                </columns>
             </TableView>
             <AnchorPane layoutX="5.0" layoutY="-1.0" prefHeight="30.0" prefWidth="515.0" styleClass="ContenedorTitle">
                <children>
-                  <Label layoutX="148.0" layoutY="5.0" styleClass="ImportanciaLevelOne" text="PLATILLOS" />
+                  <Label layoutX="221.0" layoutY="5.0" styleClass="ImportanciaLevelOne" text="PLATILLOS" />
                </children>
             </AnchorPane>
-            <Button id="BtnAgregar" layoutX="528.0" layoutY="215.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="BtnCrud" />
-            <Button id="BtnEditar" layoutX="528.0" layoutY="283.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="BtnCrud" />
-            <Button id="BtnEliminar" layoutX="528.0" layoutY="356.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="BtnCrud" />
+            <Button id="BtnAgregar" fx:id="BtnAgregarPlatillo" layoutX="528.0" layoutY="215.0" mnemonicParsing="false" onAction="#AbrirAgregarPlatillo" prefHeight="60.0" prefWidth="60.0" styleClass="BtnCrud" />
+            <Button id="BtnEditar" fx:id="BtnActualizarPlatillo" disable="true" layoutX="528.0" layoutY="283.0" mnemonicParsing="false" onAction="#AbrirActualizarPlatillo" prefHeight="60.0" prefWidth="60.0" styleClass="BtnCrud" />
+            <Button id="BtnEliminar" fx:id="BtnEliminarPlatillo" disable="true" layoutX="528.0" layoutY="356.0" mnemonicParsing="false" onAction="#MetodoEliminarPlatillo" prefHeight="60.0" prefWidth="60.0" styleClass="BtnCrud" />
             <Button fx:id="BtnRegresarAlMenu" layoutX="525.0" layoutY="7.0" mnemonicParsing="false" onAction="#MetodoRegresarAlMenu" prefHeight="40.0" prefWidth="80.0" styleClass="BtnAction" text="REGRESAR" />
          </children>
       </AnchorPane>

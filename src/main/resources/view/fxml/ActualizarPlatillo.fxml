@@ -4,15 +4,14 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Spinner?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="850.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fafosy.controller.AgregarPlatilloController">
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="850.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fafosy.controller.ActualizarPlatilloController">
    <stylesheets>
-      <URL value="@/View/Style/AgregarPlatillo.css" />
+      <URL value="@/View/Style/ActualizarPlatillo.css" />
    </stylesheets>
    <children>
       <AnchorPane id="PanelDataUser" prefHeight="120.0" prefWidth="850.0">
@@ -24,8 +23,7 @@
             <Label id="ImportanciaLevelTwo" layoutX="141.0" layoutY="60.0" text="[ROL]" />
          </children>
       </AnchorPane>
-      <TextField layoutX="252.0" layoutY="210.0" prefHeight="25.0" prefWidth="193.0" />
-      <Spinner editable="true" layoutX="252.0" layoutY="292.0" opacity="0.9" prefHeight="25.0" prefWidth="193.0" />
+      <TextField fx:id="TxtNombre" layoutX="252.0" layoutY="210.0" prefHeight="25.0" prefWidth="193.0" />
       <Label layoutX="252.0" layoutY="185.0" styleClass="LabelOptions" text="NOMBRE" />
       <Label layoutX="252.0" layoutY="264.0" styleClass="LabelOptions" text="PRECIO" />
       <ImageView fitHeight="100.0" fitWidth="120.0" layoutX="536.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
@@ -34,9 +32,11 @@
          </image>
       </ImageView>
       <Label layoutX="541.0" layoutY="185.0" styleClass="LabelOptions" text="FOTOGRAFÍA" />
-      <Button layoutX="546.0" layoutY="325.0" mnemonicParsing="false" opacity="0.85" prefHeight="40.0" prefWidth="80.0" styleClass="BtnAction" text="BUSCAR" />
+      <Button fx:id="BtnBuscarImg" disable="true" layoutX="546.0" layoutY="325.0" mnemonicParsing="false" onAction="#MetodoBuscarImagen" opacity="0.85" prefHeight="40.0" prefWidth="80.0" styleClass="BtnAction" text="BUSCAR" />
       <Label layoutX="252.0" layoutY="345.0" styleClass="LabelOptions" text="CATEGORÍA" />
-      <ComboBox layoutX="252.0" layoutY="373.0" opacity="0.9" prefHeight="25.0" prefWidth="193.0" promptText="-- SELECCIONE --" />
-      <Button layoutX="371.0" layoutY="479.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="149.0" styleClass="BtnAction" text="ACTUALIZAR PLATILLO" />
+      <ComboBox fx:id="CbCategoria" layoutX="252.0" layoutY="373.0" opacity="0.9" prefHeight="25.0" prefWidth="193.0" promptText="-- SELECCIONE --" />
+      <Button fx:id="BtnActualizarPlatillo" layoutX="454.0" layoutY="479.0" mnemonicParsing="false" onAction="#MetodoActualizarPlatillo" prefHeight="40.0" prefWidth="149.0" styleClass="BtnAction" text="ACTULIZAR" />
+      <Button fx:id="BtnRegresarAEditarMenu" layoutX="274.0" layoutY="479.0" mnemonicParsing="false" onAction="#MetodoRegresarAEditarMenu" prefHeight="40.0" prefWidth="149.0" styleClass="BtnAction" text="REGRESAR" />
+      <TextField fx:id="TxtPrecio" layoutX="252.0" layoutY="286.0" prefHeight="25.0" prefWidth="193.0" promptText="0.00" />
    </children>
 </AnchorPane>

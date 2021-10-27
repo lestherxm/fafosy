@@ -27,3 +27,7 @@
     -fx-background-color: #607EA5;
 }
 
+#TablaPlatillosDeXCategoria .ColumnaDeTabla, #TablaCategoria .ColumnaDeTabla{
+  -fx-alignment: CENTER;
+}
+
